@@ -34,6 +34,8 @@ int LinkedList<T>::size() const
 	
 	if(isEmpty() == false)
 	{
+		size++;
+		
 		while(temp->getNext() != nullptr)
 		{
 			size++;
