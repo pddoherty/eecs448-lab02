@@ -51,13 +51,13 @@ bool LinkedList<T>::search(T value) const
 	Node<T>* temp = m_front;
 	bool isFound = false;
 
+	if(isEmpty() == true)
+	{
+		return (isFound);
+	}
 	while(temp != nullptr)
 	{
-		if(isEmpty() == false)
-		{
-			return (isFound);
-		}
-		else if(temp->getValue() == value)
+	    if(temp->getValue() == value)
 		{
 			isFound = true;
 			return(isFound);
